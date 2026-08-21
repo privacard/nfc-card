@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Privacard</title>
+
+    <meta name="description" content="Privacard kişisel dijital kart.">
+</head>
+
+<body>
+
+    <main>
+        <h1>Privacard</h1>
+
+        <p>Hoş geldiniz.</p>
+
+        <button onclick="copyIBAN()">
+            IBAN'ı Kopyala
+        </button>
+
+        <p id="message"></p>
+    </main>
+
+    <script>
+        function copyIBAN() {
+            const iban = "TR00 5168 3541 7067 6850";
+
+            navigator.clipboard.writeText(iban);
+
+            document.getElementById("message").textContent =
+                "IBAN kopyalandı.";
+        }
+    </script>
+
+</body>
+</html>
