@@ -1,525 +1,999 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BİRKAN IGAN — Hair Designer</title>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Birkan Igan — Hair Designer. Randevu, Instagram, Google yorumları ve ödeme.">
+<title>Birkan Igan — Hair Designer</title>
 
 <style>
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0a0a0a;
-    color: #f4f1ea;
-    min-height: 100vh;
+body{
+
+background:#090909;
+
+color:#f2efe8;
+
+font-family:Arial,Helvetica,sans-serif;
+
 }
 
-.page {
-    width: 100%;
-    max-width: 520px;
-    margin: auto;
-    padding-bottom: 45px;
+.page{
+
+max-width:520px;
+
+margin:auto;
+
+padding-bottom:50px;
+
 }
 
 /* HERO */
 
-.hero {
-    height: 430px;
-    position: relative;
-    overflow: hidden;
+.hero{
 
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.05),
-            rgba(0,0,0,0.55),
-            #0a0a0a
-        ),
-        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85");
+height:430px;
 
-    background-size: cover;
-    background-position: center;
+position:relative;
+
+background:
+
+linear-gradient(
+to bottom,
+rgba(0,0,0,.05),
+rgba(0,0,0,.45),
+#090909
+),
+
+url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85");
+
+background-size:cover;
+
+background-position:center;
+
 }
 
-.hero-content {
-    position: absolute;
-    left: 28px;
-    right: 28px;
-    bottom: 35px;
+.hero-content{
+
+position:absolute;
+
+left:28px;
+
+right:28px;
+
+bottom:35px;
+
 }
 
-.small-title {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #c9a86a;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.small-title{
+
+font-size:11px;
+
+letter-spacing:4px;
+
+color:#c9a86a;
+
+margin-bottom:10px;
+
 }
 
-.hero h1 {
-    font-family: Georgia, serif;
-    font-size: 42px;
-    line-height: 0.95;
-    font-weight: 400;
-    letter-spacing: -1px;
+.hero h1{
+
+font-family:Georgia,serif;
+
+font-size:43px;
+
+line-height:.95;
+
+font-weight:400;
+
 }
 
-.hero h1 span {
-    color: #c9a86a;
+.hero h1 span{
+
+color:#c9a86a;
+
 }
 
-.hero-subtitle {
-    margin-top: 15px;
-    color: #c8c5bd;
-    font-size: 14px;
-    letter-spacing: 1px;
+.hero-subtitle{
+
+margin-top:15px;
+
+color:#c8c5bd;
+
+font-size:13px;
+
+letter-spacing:2px;
+
 }
+
 
 /* CONTENT */
 
-.content {
-    padding: 0 20px;
+.content{
+
+padding:0 20px;
+
 }
 
-.section {
-    margin-top: 18px;
-    padding: 22px;
-    border: 1px solid #242424;
-    background: #101010;
-    border-radius: 2px;
+.section{
+
+margin-top:18px;
+
+padding:22px;
+
+background:#101010;
+
+border:1px solid #252525;
+
+border-radius:2px;
+
 }
 
-.section-label {
-    font-size: 10px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #8f8a80;
-    margin-bottom: 16px;
+.section-title{
+
+font-size:10px;
+
+letter-spacing:3px;
+
+color:#858078;
+
+text-transform:uppercase;
+
+margin-bottom:17px;
+
 }
 
-/* INTRO */
 
-.intro {
-    line-height: 1.7;
-    color: #bcb9b2;
-    font-size: 14px;
+/* ABOUT */
+
+.about{
+
+font-size:14px;
+
+line-height:1.7;
+
+color:#bbb7af;
+
 }
 
-.intro strong {
-    color: #f4f1ea;
-    font-weight: 500;
+.about strong{
+
+color:white;
+
+font-weight:500;
+
 }
 
-/* BUTTONS */
 
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* BUTTON */
 
-    width: 100%;
-    min-height: 55px;
+.button{
 
-    padding: 0 18px;
-    margin-top: 10px;
+display:flex;
 
-    border-radius: 2px;
-    text-decoration: none;
+align-items:center;
 
-    font-size: 13px;
-    letter-spacing: 0.5px;
+justify-content:space-between;
 
-    transition: 0.2s;
+width:100%;
+
+min-height:55px;
+
+padding:0 18px;
+
+margin-top:10px;
+
+text-decoration:none;
+
+border-radius:2px;
+
+font-size:13px;
+
+transition:.2s;
+
 }
 
-.button:hover {
-    transform: translateY(-2px);
+.button:hover{
+
+transform:translateY(-2px);
+
 }
 
-.instagram {
-    background: #f0ede6;
-    color: #111;
+.instagram{
+
+background:#f0ede6;
+
+color:#111;
+
 }
 
-.google {
-    background: #191919;
-    border: 1px solid #303030;
-    color: #eee;
+.google{
+
+background:#191919;
+
+border:1px solid #303030;
+
+color:#eee;
+
 }
 
-.arrow {
-    font-size: 18px;
+
+/* HAIR CATALOG */
+
+.catalog{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:10px;
+
 }
 
-/* IBAN */
+.hair-card{
 
-.iban-box {
-    background: #171717;
-    border: 1px solid #292929;
-    padding: 17px;
-    margin-bottom: 10px;
+background:#171717;
+
+border:1px solid #292929;
+
+overflow:hidden;
+
+cursor:pointer;
+
+transition:.25s;
+
 }
 
-.iban-label {
-    display: block;
-    color: #77736c;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 9px;
+.hair-card:hover{
+
+transform:translateY(-3px);
+
+border-color:#c9a86a;
+
 }
 
-.iban {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    word-break: break-word;
-    color: #e8e3d9;
+.hair-image{
+
+width:100%;
+
+height:145px;
+
+object-fit:cover;
+
+display:block;
+
 }
 
-.copy-button {
-    width: 100%;
-    min-height: 52px;
+.hair-info{
 
-    border: none;
-    border-radius: 2px;
+padding:13px;
 
-    background: #c9a86a;
-    color: #0c0c0c;
-
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-    cursor: pointer;
 }
 
-.copy-button:active {
-    transform: scale(0.98);
+.hair-name{
+
+font-size:13px;
+
+letter-spacing:.5px;
+
+margin-bottom:5px;
+
 }
 
-.message {
-    text-align: center;
-    min-height: 18px;
-    margin-top: 10px;
+.hair-desc{
 
-    font-size: 12px;
-    color: #c9a86a;
+font-size:11px;
+
+line-height:1.5;
+
+color:#777;
+
 }
 
-/* BANKS */
 
-.bank-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 12px;
+/* STYLE FINDER */
+
+.finder-text{
+
+color:#aaa;
+
+font-size:13px;
+
+line-height:1.6;
+
+margin-bottom:15px;
+
 }
 
-.bank {
-    min-height: 48px;
+textarea{
 
-    background: #151515;
-    border: 1px solid #292929;
-    color: #ddd;
+width:100%;
 
-    border-radius: 2px;
+height:100px;
 
-    font-size: 12px;
-    cursor: pointer;
+resize:none;
+
+background:#171717;
+
+border:1px solid #2b2b2b;
+
+color:#eee;
+
+padding:14px;
+
+font-family:inherit;
+
+font-size:13px;
+
+outline:none;
+
 }
 
-.bank:hover {
-    border-color: #c9a86a;
-    color: #c9a86a;
+textarea:focus{
+
+border-color:#c9a86a;
+
 }
+
+.find-button{
+
+width:100%;
+
+height:50px;
+
+margin-top:10px;
+
+border:none;
+
+background:#c9a86a;
+
+color:#111;
+
+font-weight:bold;
+
+letter-spacing:1px;
+
+cursor:pointer;
+
+}
+
+.recommendation{
+
+display:none;
+
+margin-top:15px;
+
+padding:15px;
+
+background:#171717;
+
+border-left:2px solid #c9a86a;
+
+font-size:13px;
+
+line-height:1.6;
+
+color:#cfcac0;
+
+}
+
+
+/* PAYMENT */
+
+.iban-box{
+
+background:#171717;
+
+border:1px solid #292929;
+
+padding:17px;
+
+margin-bottom:10px;
+
+}
+
+.iban-label{
+
+display:block;
+
+font-size:10px;
+
+letter-spacing:2px;
+
+color:#777;
+
+margin-bottom:8px;
+
+}
+
+.iban{
+
+font-size:14px;
+
+word-break:break-word;
+
+}
+
+.copy-button{
+
+width:100%;
+
+height:52px;
+
+border:none;
+
+background:#c9a86a;
+
+color:#111;
+
+font-weight:bold;
+
+letter-spacing:1px;
+
+cursor:pointer;
+
+}
+
+.message{
+
+text-align:center;
+
+min-height:18px;
+
+margin-top:10px;
+
+font-size:12px;
+
+color:#c9a86a;
+
+}
+
+
+/* BANK */
+
+.bank-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:8px;
+
+margin-top:12px;
+
+}
+
+.bank{
+
+height:48px;
+
+background:#151515;
+
+border:1px solid #292929;
+
+color:#ddd;
+
+cursor:pointer;
+
+}
+
+.bank:hover{
+
+border-color:#c9a86a;
+
+color:#c9a86a;
+
+}
+
 
 /* FOOTER */
 
-.footer {
-    text-align: center;
-    padding: 30px 20px 0;
+.footer{
 
-    color: #55514b;
-    font-size: 9px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
+text-align:center;
 
-@media(max-width: 380px) {
+margin-top:30px;
 
-    .hero {
-        height: 390px;
-    }
+font-size:9px;
 
-    .hero h1 {
-        font-size: 36px;
-    }
+letter-spacing:3px;
+
+color:#4f4c47;
 
 }
 
 </style>
+
 </head>
 
 
 <body>
 
+
 <div class="page">
 
-    <!-- HERO -->
 
-    <section class="hero">
+<!-- HERO -->
 
-        <div class="hero-content">
+<section class="hero">
 
-            <div class="small-title">
-                Hair Designer
-            </div>
+<div class="hero-content">
 
-            <h1>
-                Birkan<br>
-                <span>Igan</span>
-            </h1>
+<div class="small-title">
 
-            <p class="hero-subtitle">
-                CUT · STYLE · DETAIL
-            </p>
+HAIR DESIGNER
 
-        </div>
+</div>
 
-    </section>
+<h1>
 
+Birkan<br>
 
-    <div class="content">
+<span>Igan</span>
 
+</h1>
 
-        <!-- ABOUT -->
+<p class="hero-subtitle">
 
-        <section class="section">
+CUT · STYLE · DETAIL
 
-            <div class="section-label">
-                About
-            </div>
+</p>
 
-            <p class="intro">
+</div>
 
-                <strong>Birkan Igan</strong> — kişisel stil,
-                modern saç tasarımı ve detay odaklı
-                grooming deneyimi.
+</section>
 
-            </p>
 
-        </section>
+<div class="content">
 
 
-        <!-- SOCIAL -->
+<!-- ABOUT -->
 
-        <section class="section">
+<section class="section">
 
-            <div class="section-label">
-                Connect
-            </div>
+<div class="section-title">
 
+ABOUT
 
-            <a
-                href="https://instagram.com/birkanigan"
-                target="_blank"
-                class="button instagram"
-            >
+</div>
 
-                <span>Instagram</span>
+<p class="about">
 
-                <span class="arrow">↗</span>
+<strong>Birkan Igan</strong> — modern saç tasarımı,
+kişisel stil ve detay odaklı grooming deneyimi.
 
-            </a>
+</p>
 
+</section>
 
-            <a
-                href="https://www.google.com/search?q=Birkan+Igan+Hair+Designer"
-                target="_blank"
-                class="button google"
-            >
 
-                <span>Google'da Yorum Yap</span>
+<!-- SOCIAL -->
 
-                <span class="arrow">↗</span>
+<section class="section">
 
-            </a>
+<div class="section-title">
 
-        </section>
+CONNECT
 
+</div>
 
-        <!-- PAYMENT -->
+<a
+href="https://instagram.com/birkanigan"
+target="_blank"
+class="button instagram">
 
-        <section class="section">
+<span>Instagram</span>
 
-            <div class="section-label">
-                Payment
-            </div>
+<span>↗</span>
 
+</a>
 
-            <div class="iban-box">
 
-                <span class="iban-label">
-                    IBAN
-                </span>
+<a
+href="https://www.google.com/search?q=Birkan+Igan+Hair+Designer"
+target="_blank"
+class="button google">
 
-                <div
-                    class="iban"
-                    id="iban"
-                >
-                    TR12 3456 7890 1234 5678 9012 34
-                </div>
-
-            </div>
-
-
-            <button
-                class="copy-button"
-                onclick="copyIBAN()"
-            >
-                IBAN'I KOPYALA
-            </button>
-
-
-            <div
-                class="message"
-                id="message"
-            ></div>
-
-
-            <div class="section-label"
-                 style="margin-top:24px;">
-
-                Bankanı Seç
-
-            </div>
-
-
-            <div class="bank-grid">
-
-                <button
-                    class="bank"
-                    onclick="openBank('Garanti BBVA')"
-                >
-                    Garanti BBVA
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('Akbank')"
-                >
-                    Akbank
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('İş Bankası')"
-                >
-                    İş Bankası
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('Yapı Kredi')"
-                >
-                    Yapı Kredi
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('Ziraat Bankası')"
-                >
-                    Ziraat
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('VakıfBank')"
-                >
-                    VakıfBank
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('Halkbank')"
-                >
-                    Halkbank
-                </button>
-
-                <button
-                    class="bank"
-                    onclick="openBank('QNB')"
-                >
-                    QNB
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <div class="footer">
-            PRIVACARD · DIGITAL IDENTITY
-        </div>
-
-    </div>
+<span>⭐ Google'da Yorum Yap</span>
+
+<span>↗</span>
+
+</a>
+
+</section>
+
+
+<!-- HAIR CATALOG -->
+
+<section class="section">
+
+<div class="section-title">
+
+HAIR CATALOG
+
+</div>
+
+
+<div class="catalog">
+
+
+<div class="hair-card">
+
+<img
+class="hair-image"
+src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80">
+
+<div class="hair-info">
+
+<div class="hair-name">
+
+TEXTURED CROP
+
+</div>
+
+<div class="hair-desc">
+
+Doğal doku · Modern · Kolay şekillendirme
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hair-card">
+
+<img
+class="hair-image"
+src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80">
+
+<div class="hair-info">
+
+<div class="hair-name">
+
+MODERN MULLET
+
+</div>
+
+<div class="hair-desc">
+
+Karakterli · Hacimli · Editorial görünüm
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hair-card">
+
+<img
+class="hair-image"
+src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80">
+
+<div class="hair-info">
+
+<div class="hair-name">
+
+LOW TAPER
+
+</div>
+
+<div class="hair-desc">
+
+Temiz · Minimal · Günlük kullanım
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hair-card">
+
+<img
+class="hair-image"
+src="https://images.unsplash.com/photo-1593702295094-aea52b6f3c7b?auto=format&fit=crop&w=600&q=80">
+
+<div class="hair-info">
+
+<div class="hair-name">
+
+SLICK BACK
+
+</div>
+
+<div class="hair-desc">
+
+Klasik temel · Modern yorum · Şık
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- STYLE FINDER -->
+
+<section class="section">
+
+<div class="section-title">
+
+FIND YOUR STYLE
+
+</div>
+
+<p class="finder-text">
+
+Saçını, yüz şeklini ve nasıl bir tarz
+istediğini anlat. Sana uygun bir stil
+önerelim.
+
+</p>
+
+
+<textarea
+id="styleInput"
+placeholder="Örn: Saçım düz, yüzüm biraz uzun. Yanları çok kısa istemiyorum ama temiz görünsün...">
+</textarea>
+
+
+<button
+class="find-button"
+onclick="recommendStyle()">
+
+STİLİMİ BUL
+
+</button>
+
+
+<div
+class="recommendation"
+id="recommendation">
+
+</div>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<section class="section">
+
+<div class="section-title">
+
+PAYMENT
+
+</div>
+
+
+<div class="iban-box">
+
+<span class="iban-label">
+
+IBAN
+
+</span>
+
+<div class="iban">
+
+TR12 3456 7890 1234 5678 9012 34
+
+</div>
+
+</div>
+
+
+<button
+class="copy-button"
+onclick="copyIBAN()">
+
+IBAN'I KOPYALA
+
+</button>
+
+
+<div
+class="message"
+id="message">
+
+</div>
+
+
+<div
+class="section-title"
+style="margin-top:24px;">
+
+BANKANI SEÇ
+
+</div>
+
+
+<div class="bank-grid">
+
+<button class="bank"
+onclick="openBank('Garanti BBVA')">
+
+Garanti BBVA
+
+</button>
+
+<button class="bank"
+onclick="openBank('Akbank')">
+
+Akbank
+
+</button>
+
+<button class="bank"
+onclick="openBank('İş Bankası')">
+
+İş Bankası
+
+</button>
+
+<button class="bank"
+onclick="openBank('Yapı Kredi')">
+
+Yapı Kredi
+
+</button>
+
+<button class="bank"
+onclick="openBank('Ziraat')">
+
+Ziraat
+
+</button>
+
+<button class="bank"
+onclick="openBank('VakıfBank')">
+
+VakıfBank
+
+</button>
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+PRIVACARD · DIGITAL IDENTITY
+
+</div>
+
+
+</div>
 
 </div>
 
 
 <script>
 
+
 const IBAN =
 "TR123456789012345678901234";
 
 
-function copyIBAN() {
+function copyIBAN(){
 
-    navigator.clipboard.writeText(IBAN);
+navigator.clipboard.writeText(IBAN);
 
-    const message =
-        document.getElementById("message");
+document.getElementById("message")
+.innerText="✓ IBAN kopyalandı";
 
-    message.innerText =
-        "✓ IBAN kopyalandı";
+setTimeout(()=>{
 
-    setTimeout(() => {
+document.getElementById("message")
+.innerText="";
 
-        message.innerText = "";
-
-    }, 2500);
+},2500);
 
 }
 
 
-function openBank(bank) {
+function openBank(bank){
 
-    navigator.clipboard.writeText(IBAN);
+navigator.clipboard.writeText(IBAN);
 
-    const message =
-        document.getElementById("message");
-
-    message.innerText =
-        "✓ IBAN kopyalandı — " + bank + " açılıyor";
-
-    /*
-        Bankaların resmi uygulama
-        yönlendirmelerini daha sonra
-        buraya bağlayacağız.
-    */
+document.getElementById("message")
+.innerText=
+"✓ IBAN kopyalandı — "+bank;
 
 }
+
+
+/*
+
+ŞİMDİLİK BASİT ÖNERİ MOTORU
+
+İleride bunu gerçek AI sistemine
+bağlayabiliriz.
+
+*/
+
+function recommendStyle(){
+
+const text =
+document.getElementById("styleInput")
+.value
+.toLowerCase();
+
+const result =
+document.getElementById("recommendation");
+
+
+if(
+text.includes("uzun") ||
+text.includes("oval")
+){
+
+result.innerHTML=
+
+"<strong>ÖNERİMİZ: TEXTURED CROP + LOW TAPER</strong><br><br>"+
+"Yüzün uzunsa yanları aşırı yükseltmeden,"+
+" üst bölümde kontrollü doku kullanmak yüz"+
+"oranlarını daha dengeli gösterebilir. "+
+"Modern ama günlük kullanımı kolay bir stil.";
+
+}
+
+else if(
+text.includes("kıvırcık") ||
+text.includes("dalgalı")
+){
+
+result.innerHTML=
+
+"<strong>ÖNERİMİZ: CURLY TOP + LOW TAPER</strong><br><br>"+
+"Doğal dokuyu öldürmek yerine üst kısmı"+
+" koruyup yanları kontrollü temizlemek daha"+
+"karakterli bir görünüm oluşturabilir.";
+
+}
+
+else{
+
+result.innerHTML=
+
+"<strong>ÖNERİMİZ: LOW TAPER + TEXTURED TOP</strong><br><br>"+
+"Modern, temiz ve farklı yüz şekillerine"+
+"uyarlanabilen güvenli bir başlangıç.";
+
+}
+
+
+result.style.display="block";
+
+}
+
 
 </script>
 
+
 </body>
+
 </html>
