@@ -5,11 +5,10 @@
 
 <meta charset="UTF-8">
 
-<meta
-name="viewport"
+<meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Birkan Igan — Hair Designer</title>
+<title>Privacard</title>
 
 <style>
 
@@ -20,488 +19,258 @@ padding:0;
 }
 
 body{
-
-background:#090909;
-
-color:#f2efe8;
-
 font-family:Arial,Helvetica,sans-serif;
-
+background:#090909;
+color:white;
 }
 
 .page{
-
 max-width:520px;
-
 margin:auto;
-
 padding-bottom:50px;
-
 }
 
 /* HERO */
 
 .hero{
-
-height:430px;
-
+height:420px;
 position:relative;
+background-size:cover;
+background-position:center;
+}
 
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
 background:
-
 linear-gradient(
 to bottom,
-rgba(0,0,0,.05),
-rgba(0,0,0,.45),
-#090909
-),
-
-url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85");
-
-background-size:cover;
-
-background-position:center;
-
+transparent 20%,
+rgba(0,0,0,.85)
+);
 }
 
 .hero-content{
-
 position:absolute;
-
+z-index:2;
 left:28px;
-
-right:28px;
-
 bottom:35px;
-
 }
 
-.small-title{
-
+.label{
 font-size:11px;
-
 letter-spacing:4px;
-
-color:#c9a86a;
-
 margin-bottom:10px;
-
 }
 
 .hero h1{
-
 font-family:Georgia,serif;
-
 font-size:43px;
-
-line-height:.95;
-
 font-weight:400;
-
+line-height:.95;
 }
 
-.hero h1 span{
-
-color:#c9a86a;
-
-}
-
-.hero-subtitle{
-
+.subtitle{
 margin-top:15px;
-
-color:#c8c5bd;
-
 font-size:13px;
-
 letter-spacing:2px;
-
 }
-
 
 /* CONTENT */
 
 .content{
-
 padding:0 20px;
-
 }
 
 .section{
-
 margin-top:18px;
-
 padding:22px;
-
-background:#101010;
-
-border:1px solid #252525;
-
-border-radius:2px;
-
+border:1px solid #292929;
+background:#111;
 }
 
 .section-title{
-
 font-size:10px;
-
 letter-spacing:3px;
-
-color:#858078;
-
-text-transform:uppercase;
-
-margin-bottom:17px;
-
+color:#888;
+margin-bottom:16px;
 }
 
-
-/* ABOUT */
-
-.about{
-
-font-size:14px;
-
-line-height:1.7;
-
-color:#bbb7af;
-
-}
-
-.about strong{
-
-color:white;
-
-font-weight:500;
-
-}
-
-
-/* BUTTON */
+/* BUTTONS */
 
 .button{
-
 display:flex;
-
 align-items:center;
-
 justify-content:space-between;
 
 width:100%;
+min-height:53px;
 
-min-height:55px;
-
-padding:0 18px;
-
-margin-top:10px;
+padding:0 17px;
+margin-top:9px;
 
 text-decoration:none;
 
-border-radius:2px;
-
 font-size:13px;
 
-transition:.2s;
-
-}
-
-.button:hover{
-
-transform:translateY(-2px);
-
+border-radius:2px;
 }
 
 .instagram{
-
-background:#f0ede6;
-
+background:#eee;
 color:#111;
-
 }
 
 .google{
-
 background:#191919;
-
-border:1px solid #303030;
-
-color:#eee;
-
+border:1px solid #333;
+color:white;
 }
 
-
-/* HAIR CATALOG */
+/* CATALOG */
 
 .catalog{
-
 display:grid;
-
 grid-template-columns:1fr 1fr;
-
 gap:10px;
-
 }
 
 .hair-card{
-
 background:#171717;
-
 border:1px solid #292929;
-
 overflow:hidden;
-
-cursor:pointer;
-
-transition:.25s;
-
 }
 
-.hair-card:hover{
-
-transform:translateY(-3px);
-
-border-color:#c9a86a;
-
-}
-
-.hair-image{
-
+.hair-card img{
 width:100%;
-
-height:145px;
-
+height:140px;
 object-fit:cover;
-
 display:block;
-
 }
 
 .hair-info{
-
-padding:13px;
-
+padding:12px;
 }
 
 .hair-name{
-
-font-size:13px;
-
-letter-spacing:.5px;
-
-margin-bottom:5px;
-
+font-size:12px;
+font-weight:bold;
 }
 
 .hair-desc{
-
-font-size:11px;
-
-line-height:1.5;
-
+margin-top:5px;
+font-size:10px;
 color:#777;
-
+line-height:1.5;
 }
-
 
 /* STYLE FINDER */
 
-.finder-text{
-
-color:#aaa;
-
-font-size:13px;
-
-line-height:1.6;
-
-margin-bottom:15px;
-
-}
-
 textarea{
-
 width:100%;
-
 height:100px;
 
-resize:none;
-
 background:#171717;
+border:1px solid #333;
 
-border:1px solid #2b2b2b;
+color:white;
 
-color:#eee;
+padding:13px;
 
-padding:14px;
-
-font-family:inherit;
-
-font-size:13px;
-
+resize:none;
 outline:none;
-
-}
-
-textarea:focus{
-
-border-color:#c9a86a;
-
 }
 
 .find-button{
-
 width:100%;
-
 height:50px;
 
-margin-top:10px;
+margin-top:9px;
 
 border:none;
 
-background:#c9a86a;
-
-color:#111;
-
 font-weight:bold;
-
 letter-spacing:1px;
 
 cursor:pointer;
-
 }
 
 .recommendation{
-
 display:none;
 
-margin-top:15px;
+margin-top:12px;
 
-padding:15px;
+padding:14px;
 
-background:#171717;
-
-border-left:2px solid #c9a86a;
-
-font-size:13px;
-
-line-height:1.6;
-
-color:#cfcac0;
-
-}
-
-
-/* PAYMENT */
-
-.iban-box{
-
-background:#171717;
-
-border:1px solid #292929;
-
-padding:17px;
-
-margin-bottom:10px;
-
-}
-
-.iban-label{
-
-display:block;
-
-font-size:10px;
-
-letter-spacing:2px;
-
-color:#777;
-
-margin-bottom:8px;
-
-}
-
-.iban{
-
-font-size:14px;
-
-word-break:break-word;
-
-}
-
-.copy-button{
-
-width:100%;
-
-height:52px;
-
-border:none;
-
-background:#c9a86a;
-
-color:#111;
-
-font-weight:bold;
-
-letter-spacing:1px;
-
-cursor:pointer;
-
-}
-
-.message{
-
-text-align:center;
-
-min-height:18px;
-
-margin-top:10px;
+background:#181818;
 
 font-size:12px;
 
-color:#c9a86a;
-
+line-height:1.6;
 }
 
+/* IBAN */
+
+.iban-box{
+background:#171717;
+border:1px solid #292929;
+padding:16px;
+margin-bottom:9px;
+}
+
+.iban-label{
+font-size:10px;
+letter-spacing:2px;
+color:#777;
+display:block;
+margin-bottom:8px;
+}
+
+.iban{
+font-size:13px;
+word-break:break-word;
+}
+
+.copy-button{
+width:100%;
+height:52px;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.message{
+text-align:center;
+min-height:18px;
+margin-top:9px;
+font-size:12px;
+}
 
 /* BANK */
 
 .bank-grid{
-
 display:grid;
-
 grid-template-columns:1fr 1fr;
-
 gap:8px;
-
-margin-top:12px;
-
+margin-top:10px;
 }
 
 .bank{
-
-height:48px;
+height:46px;
 
 background:#151515;
 
 border:1px solid #292929;
 
-color:#ddd;
+color:white;
 
 cursor:pointer;
-
 }
-
-.bank:hover{
-
-border-color:#c9a86a;
-
-color:#c9a86a;
-
-}
-
 
 /* FOOTER */
 
 .footer{
-
 text-align:center;
 
 margin-top:30px;
@@ -510,8 +279,7 @@ font-size:9px;
 
 letter-spacing:3px;
 
-color:#4f4c47;
-
+color:#555;
 }
 
 </style>
@@ -525,31 +293,27 @@ color:#4f4c47;
 <div class="page">
 
 
-<!-- HERO -->
-
-<section class="hero">
+<section
+class="hero"
+id="hero">
 
 <div class="hero-content">
 
-<div class="small-title">
-
+<div
+class="label"
+id="label">
 HAIR DESIGNER
-
 </div>
 
-<h1>
-
-Birkan<br>
-
-<span>Igan</span>
-
+<h1 id="name">
+Privacard
 </h1>
 
-<p class="hero-subtitle">
-
+<div
+class="subtitle"
+id="subtitle">
 CUT · STYLE · DETAIL
-
-</p>
+</div>
 
 </div>
 
@@ -564,16 +328,12 @@ CUT · STYLE · DETAIL
 <section class="section">
 
 <div class="section-title">
-
 ABOUT
-
 </div>
 
-<p class="about">
-
-<strong>Birkan Igan</strong> — modern saç tasarımı,
-kişisel stil ve detay odaklı grooming deneyimi.
-
+<p id="about"
+style="color:#aaa;font-size:14px;line-height:1.7;">
+Hoş geldiniz.
 </p>
 
 </section>
@@ -584,30 +344,26 @@ kişisel stil ve detay odaklı grooming deneyimi.
 <section class="section">
 
 <div class="section-title">
-
 CONNECT
-
 </div>
 
 <a
-href="https://instagram.com/birkanigan"
-target="_blank"
-class="button instagram">
+id="instagram"
+class="button instagram"
+target="_blank">
 
 <span>Instagram</span>
-
 <span>↗</span>
 
 </a>
 
 
 <a
-href="https://www.google.com/search?q=Birkan+Igan+Hair+Designer"
-target="_blank"
-class="button google">
+id="google"
+class="button google"
+target="_blank">
 
 <span>⭐ Google'da Yorum Yap</span>
-
 <span>↗</span>
 
 </a>
@@ -615,120 +371,17 @@ class="button google">
 </section>
 
 
-<!-- HAIR CATALOG -->
+<!-- CATALOG -->
 
 <section class="section">
 
 <div class="section-title">
-
 HAIR CATALOG
-
 </div>
 
-
-<div class="catalog">
-
-
-<div class="hair-card">
-
-<img
-class="hair-image"
-src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80">
-
-<div class="hair-info">
-
-<div class="hair-name">
-
-TEXTURED CROP
-
-</div>
-
-<div class="hair-desc">
-
-Doğal doku · Modern · Kolay şekillendirme
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="hair-card">
-
-<img
-class="hair-image"
-src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80">
-
-<div class="hair-info">
-
-<div class="hair-name">
-
-MODERN MULLET
-
-</div>
-
-<div class="hair-desc">
-
-Karakterli · Hacimli · Editorial görünüm
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="hair-card">
-
-<img
-class="hair-image"
-src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80">
-
-<div class="hair-info">
-
-<div class="hair-name">
-
-LOW TAPER
-
-</div>
-
-<div class="hair-desc">
-
-Temiz · Minimal · Günlük kullanım
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="hair-card">
-
-<img
-class="hair-image"
-src="https://images.unsplash.com/photo-1593702295094-aea52b6f3c7b?auto=format&fit=crop&w=600&q=80">
-
-<div class="hair-info">
-
-<div class="hair-name">
-
-SLICK BACK
-
-</div>
-
-<div class="hair-desc">
-
-Klasik temel · Modern yorum · Şık
-
-</div>
-
-</div>
-
-</div>
-
-
+<div
+class="catalog"
+id="catalog">
 </div>
 
 </section>
@@ -739,27 +392,26 @@ Klasik temel · Modern yorum · Şık
 <section class="section">
 
 <div class="section-title">
-
 FIND YOUR STYLE
-
 </div>
 
-<p class="finder-text">
+<p
+style="font-size:13px;color:#aaa;line-height:1.6;margin-bottom:14px;">
 
-Saçını, yüz şeklini ve nasıl bir tarz
-istediğini anlat. Sana uygun bir stil
-önerelim.
+Saçını ve istediğin tarzı anlat.
+Sana uygun bir stil önerelim.
 
 </p>
 
 
 <textarea
 id="styleInput"
-placeholder="Örn: Saçım düz, yüzüm biraz uzun. Yanları çok kısa istemiyorum ama temiz görünsün...">
+placeholder="Örn: Saçım düz, yüzüm uzun, yanları çok kısa istemiyorum...">
 </textarea>
 
 
 <button
+id="findButton"
 class="find-button"
 onclick="recommendStyle()">
 
@@ -769,9 +421,8 @@ STİLİMİ BUL
 
 
 <div
-class="recommendation"
-id="recommendation">
-
+id="recommendation"
+class="recommendation">
 </div>
 
 </section>
@@ -782,30 +433,26 @@ id="recommendation">
 <section class="section">
 
 <div class="section-title">
-
 PAYMENT
-
 </div>
 
 
 <div class="iban-box">
 
 <span class="iban-label">
-
 IBAN
-
 </span>
 
-<div class="iban">
-
-TR12 3456 7890 1234 5678 9012 34
-
+<div
+id="iban"
+class="iban">
 </div>
 
 </div>
 
 
 <button
+id="copyButton"
 class="copy-button"
 onclick="copyIBAN()">
 
@@ -815,15 +462,14 @@ IBAN'I KOPYALA
 
 
 <div
-class="message"
-id="message">
-
+id="message"
+class="message">
 </div>
 
 
 <div
 class="section-title"
-style="margin-top:24px;">
+style="margin-top:23px;">
 
 BANKANI SEÇ
 
@@ -832,46 +478,28 @@ BANKANI SEÇ
 
 <div class="bank-grid">
 
-<button class="bank"
-onclick="openBank('Garanti BBVA')">
-
+<button class="bank">
 Garanti BBVA
-
 </button>
 
-<button class="bank"
-onclick="openBank('Akbank')">
-
+<button class="bank">
 Akbank
-
 </button>
 
-<button class="bank"
-onclick="openBank('İş Bankası')">
-
+<button class="bank">
 İş Bankası
-
 </button>
 
-<button class="bank"
-onclick="openBank('Yapı Kredi')">
-
+<button class="bank">
 Yapı Kredi
-
 </button>
 
-<button class="bank"
-onclick="openBank('Ziraat')">
-
+<button class="bank">
 Ziraat
-
 </button>
 
-<button class="bank"
-onclick="openBank('VakıfBank')">
-
+<button class="bank">
 VakıfBank
-
 </button>
 
 </div>
@@ -894,70 +522,314 @@ PRIVACARD · DIGITAL IDENTITY
 <script>
 
 
-const IBAN =
-"TR123456789012345678901234";
+/* =================================
+   MÜŞTERİ VERİLERİ
+================================= */
+
+
+const customers = {
+
+
+birkan: {
+
+name:"Birkan Igan",
+
+label:"HAIR DESIGNER",
+
+subtitle:"CUT · STYLE · DETAIL",
+
+about:
+"Modern saç tasarımı, kişisel stil ve detay odaklı grooming deneyimi.",
+
+instagram:
+"https://instagram.com/birkanigan",
+
+google:
+"https://www.google.com/search?q=Birkan+Igan",
+
+iban:
+"TR12 3456 7890 1234 5678 9012 34",
+
+color:"#c9a86a",
+
+background:
+"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85",
+
+catalog:[
+
+["TEXTURED CROP",
+"Modern · doğal doku",
+"https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"],
+
+["MODERN MULLET",
+"Karakterli · hacimli",
+"https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80"],
+
+["LOW TAPER",
+"Temiz · minimal",
+"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80"],
+
+["SLICK BACK",
+"Modern klasik",
+"https://images.unsplash.com/photo-1593702295094-aea52b6f3c7b?auto=format&fit=crop&w=600&q=80"]
+
+]
+
+},
+
+
+
+mehmet: {
+
+name:"Mehmet Barber",
+
+label:"BARBER STUDIO",
+
+subtitle:"CRAFT · STYLE · DETAIL",
+
+about:
+"Modern erkek saç tasarımı, kesim ve kişisel stil.",
+
+instagram:
+"https://instagram.com/mehmetbarber",
+
+google:
+"https://www.google.com/search?q=Mehmet+Barber",
+
+iban:
+"TR98 7654 3210 9876 5432 1098 76",
+
+color:"#b83a3a",
+
+background:
+"https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85",
+
+catalog:[
+
+["TEXTURED CROP",
+"Doğal · modern",
+"https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"],
+
+["BURST FADE",
+"Keskin · karakterli",
+"https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80"],
+
+["LOW FADE",
+"Temiz · modern",
+"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80"],
+
+["MESSY STYLE",
+"Rahat · doğal",
+"https://images.unsplash.com/photo-1593702295094-aea52b6f3c7b?auto=format&fit=crop&w=600&q=80"]
+
+]
+
+},
+
+
+
+ahmet: {
+
+name:"Ahmet Barber",
+
+label:"MODERN BARBER",
+
+subtitle:"CUT · FORM · STYLE",
+
+about:
+"Minimal, modern ve kişiye özel erkek saç tasarımı.",
+
+instagram:
+"https://instagram.com/ahmetbarber",
+
+google:
+"https://www.google.com/search?q=Ahmet+Barber",
+
+iban:
+"TR45 1111 2222 3333 4444 5555 66",
+
+color:"#8d9a91",
+
+background:
+"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85",
+
+catalog:[
+
+["FLOW",
+"Doğal · hacimli",
+"https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"],
+
+["TEXTURED CROP",
+"Modern · rahat",
+"https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80"],
+
+["TAPER",
+"Minimal · temiz",
+"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80"],
+
+["SLICK BACK",
+"Şık · güçlü",
+"https://images.unsplash.com/photo-1593702295094-aea52b6f3c7b?auto=format&fit=crop&w=600&q=80"]
+
+]
+
+}
+
+};
+
+
+/* =================================
+   URL'DEN MÜŞTERİYİ BUL
+================================= */
+
+
+const params =
+new URLSearchParams(window.location.search);
+
+const customerID =
+params.get("customer") || "birkan";
+
+
+const customer =
+customers[customerID] || customers.birkan;
+
+
+/* =================================
+   SAYFAYI DOLDUR
+================================= */
+
+
+document.title =
+customer.name + " — Privacard";
+
+
+document.getElementById("name")
+.innerText =
+customer.name;
+
+
+document.getElementById("label")
+.innerText =
+customer.label;
+
+
+document.getElementById("subtitle")
+.innerText =
+customer.subtitle;
+
+
+document.getElementById("about")
+.innerText =
+customer.about;
+
+
+document.getElementById("instagram")
+.href =
+customer.instagram;
+
+
+document.getElementById("google")
+.href =
+customer.google;
+
+
+document.getElementById("iban")
+.innerText =
+customer.iban;
+
+
+document.getElementById("hero")
+.style.backgroundImage =
+
+`url("${customer.background}")`;
+
+
+document.getElementById("copyButton")
+.style.background =
+customer.color;
+
+
+document.getElementById("findButton")
+.style.background =
+customer.color;
+
+
+/* CATALOG */
+
+
+const catalog =
+document.getElementById("catalog");
+
+
+customer.catalog.forEach(item => {
+
+catalog.innerHTML += `
+
+<div class="hair-card">
+
+<img src="${item[2]}">
+
+<div class="hair-info">
+
+<div class="hair-name">
+${item[0]}
+</div>
+
+<div class="hair-desc">
+${item[1]}
+</div>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+
+/* =================================
+   IBAN KOPYALA
+================================= */
 
 
 function copyIBAN(){
 
-navigator.clipboard.writeText(IBAN);
+navigator.clipboard.writeText(
+customer.iban
+);
 
 document.getElementById("message")
-.innerText="✓ IBAN kopyalandı";
-
-setTimeout(()=>{
-
-document.getElementById("message")
-.innerText="";
-
-},2500);
+.innerText =
+"✓ IBAN kopyalandı";
 
 }
 
 
-function openBank(bank){
+/* =================================
+   BASİT STİL ÖNERİCİ
+================================= */
 
-navigator.clipboard.writeText(IBAN);
-
-document.getElementById("message")
-.innerText=
-"✓ IBAN kopyalandı — "+bank;
-
-}
-
-
-/*
-
-ŞİMDİLİK BASİT ÖNERİ MOTORU
-
-İleride bunu gerçek AI sistemine
-bağlayabiliriz.
-
-*/
 
 function recommendStyle(){
 
 const text =
-document.getElementById("styleInput")
+document
+.getElementById("styleInput")
 .value
 .toLowerCase();
 
-const result =
-document.getElementById("recommendation");
+
+let result;
 
 
 if(
-text.includes("uzun") ||
-text.includes("oval")
+text.includes("uzun")
 ){
 
-result.innerHTML=
-
-"<strong>ÖNERİMİZ: TEXTURED CROP + LOW TAPER</strong><br><br>"+
-"Yüzün uzunsa yanları aşırı yükseltmeden,"+
-" üst bölümde kontrollü doku kullanmak yüz"+
-"oranlarını daha dengeli gösterebilir. "+
-"Modern ama günlük kullanımı kolay bir stil.";
+result =
+"<strong>ÖNERİ: TEXTURED CROP + LOW TAPER</strong><br><br>"+
+"Yüz oranlarını daha dengeli göstermek için üstte kontrollü doku ve yanlarda düşük geçiş düşünülebilir.";
 
 }
 
@@ -966,30 +838,31 @@ text.includes("kıvırcık") ||
 text.includes("dalgalı")
 ){
 
-result.innerHTML=
-
-"<strong>ÖNERİMİZ: CURLY TOP + LOW TAPER</strong><br><br>"+
-"Doğal dokuyu öldürmek yerine üst kısmı"+
-" koruyup yanları kontrollü temizlemek daha"+
-"karakterli bir görünüm oluşturabilir.";
+result =
+"<strong>ÖNERİ: CURLY TOP + TAPER</strong><br><br>"+
+"Doğal saç dokusunu koruyup yanları kontrollü temizlemek modern ve karakterli bir görünüm sağlayabilir.";
 
 }
 
 else{
 
-result.innerHTML=
-
-"<strong>ÖNERİMİZ: LOW TAPER + TEXTURED TOP</strong><br><br>"+
-"Modern, temiz ve farklı yüz şekillerine"+
-"uyarlanabilen güvenli bir başlangıç.";
+result =
+"<strong>ÖNERİ: LOW TAPER + TEXTURED TOP</strong><br><br>"+
+"Modern, temiz ve farklı yüz şekillerine uyarlanabilecek güçlü bir başlangıç.";
 
 }
 
 
-result.style.display="block";
+const box =
+document.getElementById("recommendation");
+
+box.innerHTML =
+result;
+
+box.style.display =
+"block";
 
 }
-
 
 </script>
 
