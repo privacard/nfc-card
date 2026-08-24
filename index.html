@@ -6,33 +6,473 @@
 
     <title>Privacard</title>
 
-    <meta name="description" content="Privacard kişisel dijital kart.">
+    <meta
+        name="description"
+        content="Privacard - Dijital ödeme ve iletişim kartı"
+    >
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #17191c;
+            min-height: 100vh;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 520px;
+            margin: auto;
+            padding: 20px 16px 40px;
+        }
+
+        /* PROFİL */
+
+        .profile {
+            text-align: center;
+            padding: 20px 10px 25px;
+        }
+
+        .profile-image {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 14px;
+            border: 4px solid white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+        }
+
+        .profile h1 {
+            font-size: 25px;
+            margin-bottom: 6px;
+        }
+
+        .profile p {
+            color: #6b7078;
+            font-size: 15px;
+        }
+
+        /* ANA KART */
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 22px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #777d86;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* BUTONLAR */
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 54px;
+            border: none;
+            border-radius: 15px;
+            margin-top: 10px;
+            padding: 13px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .instagram {
+            background: #111318;
+            color: white;
+        }
+
+        .google {
+            background: #f5f6f8;
+            color: #20242a;
+        }
+
+        .iban-copy {
+            background: #111318;
+            color: white;
+        }
+
+        /* IBAN */
+
+        .iban-box {
+            background: #f5f6f8;
+            border-radius: 15px;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .iban-label {
+            display: block;
+            font-size: 12px;
+            color: #777d86;
+            margin-bottom: 7px;
+        }
+
+        .iban {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            word-break: break-word;
+        }
+
+        /* BANKALAR */
+
+        .banks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .bank-button {
+            min-height: 52px;
+            border: 1px solid #e3e6ea;
+            background: white;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .bank-button:hover {
+            background: #f5f6f8;
+        }
+
+        .bank-button:active {
+            transform: scale(0.97);
+        }
+
+        /* UYARI */
+
+        .notice {
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 13px;
+            margin-top: 13px;
+            color: #6c727b;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* KOPYALANDI MESAJI */
+
+        .message {
+            text-align: center;
+            color: #16804a;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 10px;
+            min-height: 18px;
+        }
+
+        /* ALT */
+
+        .footer {
+            text-align: center;
+            color: #9aa0a8;
+            font-size: 11px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 380px) {
+
+            .page {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+
+            .banks {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <main>
-        <h1>Privacard</h1>
+<div class="page">
+
+    <!-- PROFİL -->
+
+    <section class="profile">
+
+        <img
+            class="profile-image"
+            src="https://via.placeholder.com/200"
+            alt="Profil fotoğrafı"
+        >
+
+        <h1>Privacard Kullanıcısı</h1>
 
         <p>Hoş geldiniz.</p>
 
-        <button onclick="copyIBAN()">
-            IBAN'ı Kopyala
+    </section>
+
+
+    <!-- SOSYAL -->
+
+    <section class="card">
+
+        <div class="section-title">
+            İletişim
+        </div>
+
+        <a
+            class="button instagram"
+            href="https://instagram.com/"
+            target="_blank"
+        >
+            Instagram
+        </a>
+
+        <a
+            class="button google"
+            href="https://www.google.com/"
+            target="_blank"
+        >
+            ⭐ Google'da Yorum Yap
+        </a>
+
+    </section>
+
+
+    <!-- ÖDEME -->
+
+    <section class="card">
+
+        <div class="section-title">
+            Ödeme
+        </div>
+
+        <div class="iban-box">
+
+            <span class="iban-label">
+                IBAN
+            </span>
+
+            <div class="iban" id="iban">
+                TR00 0000 0000 0000 0000 0000 00
+            </div>
+
+        </div>
+
+
+        <button
+            class="button iban-copy"
+            onclick="copyIBAN()"
+        >
+            📋 IBAN'ı Kopyala
         </button>
 
-        <p id="message"></p>
-    </main>
+        <div
+            class="message"
+            id="message"
+        ></div>
 
-    <script>
-        function copyIBAN() {
-            const iban = "TR00 5168 3541 7067 6850";
 
-            navigator.clipboard.writeText(iban);
+        <div class="section-title" style="margin-top:22px;">
+            Bankanı Seç
+        </div>
 
-            document.getElementById("message").textContent =
-                "IBAN kopyalandı.";
+
+        <div class="banks">
+
+            <button
+                class="bank-button"
+                onclick="openBank('garanti')"
+            >
+                Garanti BBVA
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('akbank')"
+            >
+                Akbank
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('isbank')"
+            >
+                İş Bankası
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('yapi')"
+            >
+                Yapı Kredi
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('ziraat')"
+            >
+                Ziraat Bankası
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('vakif')"
+            >
+                VakıfBank
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('halk')"
+            >
+                Halkbank
+            </button>
+
+            <button
+                class="bank-button"
+                onclick="openBank('qnb')"
+            >
+                QNB
+            </button>
+
+        </div>
+
+
+        <div class="notice">
+
+            Bankanı seçtiğinde IBAN'ın kopyalanır.
+            Bankacılık uygulamandan para transferi
+            ekranına geçerek IBAN'ı yapıştırabilirsin.
+
+        </div>
+
+    </section>
+
+
+    <div class="footer">
+        Powered by Privacard
+    </div>
+
+</div>
+
+
+<script>
+
+    const IBAN = "TR000000000000000000000000";
+
+
+    function copyIBAN() {
+
+        navigator.clipboard.writeText(IBAN);
+
+        const message =
+            document.getElementById("message");
+
+        message.textContent =
+            "✓ IBAN kopyalandı";
+
+        setTimeout(() => {
+
+            message.textContent = "";
+
+        }, 2500);
+
+    }
+
+
+    function openBank(bank) {
+
+        // Önce IBAN'ı kopyala
+
+        navigator.clipboard.writeText(IBAN);
+
+
+        const message =
+            document.getElementById("message");
+
+        message.textContent =
+            "✓ IBAN kopyalandı. Bankanı açabilirsin.";
+
+
+        /*
+            Buraya ileride bankaların
+            desteklediği güvenli uygulama
+            bağlantılarını ekleyeceğiz.
+        */
+
+
+        const bankUrls = {
+
+            garanti:
+                "https://www.garantibbva.com.tr/",
+
+            akbank:
+                "https://www.akbank.com/",
+
+            isbank:
+                "https://www.isbank.com.tr/",
+
+            yapi:
+                "https://www.yapikredi.com.tr/",
+
+            ziraat:
+                "https://www.ziraatbank.com.tr/",
+
+            vakif:
+                "https://www.vakifbank.com.tr/",
+
+            halk:
+                "https://www.halkbank.com.tr/",
+
+            qnb:
+                "https://www.qnb.com.tr/"
+
+        };
+
+
+        if (bankUrls[bank]) {
+
+            window.open(
+                bankUrls[bank],
+                "_blank"
+            );
+
         }
-    </script>
+
+    }
+
+</script>
 
 </body>
 </html>
